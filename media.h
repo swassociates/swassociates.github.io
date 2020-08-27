@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+	<!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Help for Journalists and Media</title>
+   <meta name="description" content="Sources, Information, and Research for Journalists and Media">  
+   
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+   <link rel="stylesheet" type="text/css" href="stylesheets/vendor.css">
+   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">    
+
+   <!-- Modernizr
+   =================================================== -->
+   <script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+   =================================================== -->
+   <link rel="shortcut icon" href="favicon.png" >
+    
+</head>
+    
+<body>
+
+ 
+
+   <!-- content-wrap -->
+   <div id="content-wrap">
+
+      <!-- main  -->
+      <main class="row">
+
+            <header class="site-header">
+               <div class="logo">
+               	<a href="index.html"><img src="swlogo.png"></a>
+               </div> 
+            </header>
+
+            <div id="main-content" class="twelve columns"><center><font color=#ffffff">
+		    This Form is for Members of the Media Only
+		    
+		    
+		    
+		    
+<form
+  action="https://formspree.io/mvowjolp"
+  method="POST"
+>
+	<label><font color=#ffffff">
+    Tell Us What You Are Working On and What You Might Need:
+    <textarea name="message"></textarea>
+  </label>
+	<label><font color=#ffffff">
+    What Outlet is This For?:
+    <textarea name="outlet"></textarea>
+  </label>
+  <label><font color=#ffffff">
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label><font color=#ffffff">
+    Your Phone Number (Optional)
+    <input type="text" name="phone">
+  </label>
+  
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
+  <center>            
+
+            </div><!-- /main-content form -->
+
+            
+   
+<!-- Script
+=================================================== -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+ 
+<script src="js/jquery.fittext.js"></script>
+
+<script src="js/jquery.placeholder.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/main.js"></script>    
+		     <font size="-1" color=#ffffff>Please that we will contact you if we have something potentially useful for you, and by GDPR rules you are requesting this communication.  Thank you!</font>
+</body>
+</html>
