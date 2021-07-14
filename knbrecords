@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+	<!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>K&B Records</title>
+   <meta name="description" content="R&B Record Label">  
+   
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+   <link rel="stylesheet" type="text/css" href="stylesheets/vendor.css">
+   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">    
+
+   <!-- Modernizr
+   =================================================== -->
+   <script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+   =================================================== -->
+   <link rel="shortcut icon" href="favicon.png" >
+    
+</head>
+    
+<body>
+
+ 
+
+   <!-- content-wrap -->
+   <div id="content-wrap">
+
+      <!-- main  -->
+      <main class="row">
+
+            <header class="site-header">
+               <div class="logo">
+               	<a href="https://open.spotify.com/album/2CNVCivOIek6EdGBV28ziM"><img src="shttps://www.google.com/url?sa=i&url=http%3A%2F%2Fvoyagela.com%2Finterview%2Fmeet-koko-kennedy-koko-kennedy-los-angeles%2F&psig=AOvVaw2AvhoRIzl19dMW0FUY4DYL&ust=1626384545462000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPCAldvA4_ECFQAAAAAdAAAAABAD"></a>
+               </div> 
+            </header>
+
+            <div id="main-content" class="twelve columns"><center><font color=#ffffff">
+		    This Form is for Members of the Media Only
+		    
+		    
+		    
+		    
+
+  <center>            
+
+        
+
+            
+   
+<!-- Script
+=================================================== -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+ 
+<script src="js/jquery.fittext.js"></script>
+
+<script src="js/jquery.placeholder.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/main.js"></script>    
+		    <P>.<P>.<P> <font size="-2" color=#ffffff>Consent Notice: Please that we will contact you if we have something potentially useful for you, by emailing you we understand that you are requesting this communication.  Thank you!</font>
+</body>
+</html>
