@@ -3,178 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SW & Associates | Strategic Advisory & Brand Experience Firm | Public Affairs | AI-Driven Narrative Modernization</title>
-    <meta name="description" content="Elite Consulting Group. Entry by referral or agency vetting only.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>SW & Associates | Strategic Advisory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0f1113;
-            --card-bg: #1a1d21;
             --accent: #ffffff;
-            --text-main: #e0e0e0;
-            --text-dim: #9ca3af;
-            --border: #2d3139;
+            --text-dim: rgba(255,255,255,0.6);
         }
 
-        * {
-            box-sizing: border-box;
+        body, html {
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            height: 100%;
+            background-color: #000;
+            color: #fff;
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* The Hero Background */
+        .hero-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Replace the URL below with your chosen high-res image */
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.pexels.com/photos/3709434/pexels-photo-3709434.jpeg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        nav {
+            padding: 40px;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            padding: 20px;
         }
 
-        header {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .logo {
-            max-width: 180px;
-            height: auto;
-            filter: brightness(0) invert(1); /* Ensures logo is visible on dark bg */
-            margin-bottom: 10px;
-        }
+        .logo { height: 30px; filter: invert(1); }
 
         .media-link {
-            display: block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
             color: var(--text-dim);
             text-decoration: none;
-            font-size: 0.85rem;
-            margin-top: 10px;
-            transition: color 0.3s ease;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
         }
 
-        .media-link:hover {
-            color: var(--accent);
+        .media-link:hover { border-color: #fff; color: #fff; }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
         }
 
-        .container {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            padding: 40px;
-            border-radius: 8px;
-            width: 100%;
-            max-width: 500px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        .brand-statement h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
         }
 
-        h1 {
-            font-size: 1.25rem;
-            font-weight: 400;
-            margin-bottom: 30px;
-            text-align: center;
-            letter-spacing: 1px;
-            color: var(--accent);
+        .brand-statement p {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            max-width: 400px;
         }
+
+        .application-area {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(15px);
+            padding: 60px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .form-group { margin-bottom: 30px; }
 
         label {
             display: block;
-            margin-bottom: 8px;
-            font-size: 0.8rem;
+            font-size: 0.65rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
             color: var(--text-dim);
         }
 
-        textarea, input {
+        input, textarea {
             width: 100%;
-            background: #25292e;
-            border: 1px solid var(--border);
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
             color: #fff;
-            padding: 12px;
-            border-radius: 4px;
-            margin-bottom: 24px;
-            font-family: inherit;
-            font-size: 0.95rem;
-            transition: border-color 0.3s ease;
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        textarea:focus, input:focus {
+            padding: 10px 0;
+            font-size: 1rem;
             outline: none;
-            border-color: var(--text-dim);
+            transition: 0.3s;
         }
+
+        input:focus, textarea:focus { border-color: #fff; }
 
         button {
-            width: 100%;
-            padding: 14px;
-            background-color: var(--accent);
+            background: #fff;
             color: #000;
             border: none;
-            border-radius: 4px;
+            padding: 15px 40px;
+            font-size: 0.8rem;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             cursor: pointer;
-            transition: opacity 0.3s ease;
+            width: 100%;
         }
 
-        button:hover {
-            opacity: 0.9;
-        }
-
-        footer {
-            margin-top: 40px;
-            font-size: 0.75rem;
-            color: var(--text-dim);
-        }
-
-        footer a {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-        }
-
-        footer a:hover {
-            border-bottom: 1px solid var(--text-dim);
+        @media (max-width: 900px) {
+            main { grid-template-columns: 1fr; }
+            .brand-statement h1 { font-size: 2.5rem; }
         }
     </style>
 </head>
 <body>
+    <div class="hero-bg"></div>
+    
+    <nav>
+        <img src="https://swassociates.github.io/swlogo.png" class="logo" alt="SW & Associates">
+        <a href="https://www.linkedin.com/company/sw-and-associates/" class="media-link">SW & Associates</a>
+    </nav>
 
-    <header>
-        <a href="index.html">
-            <img src="swlogo.png" alt="SW & Associates" class="logo">
-        </a>
-        <a href="media.html" class="media-link">Members of the Media: Connect Here</a>
-    </header>
+    <main>
+        <section class="brand-statement">
+            <h1>Strategic Intelligence. Modern Narrative.</h1>
+            <p>We solve high-stakes challenges for global leaders and emerging brands.</p>
+        </section>
 
-    <div class="container">
-        <h1>Client Application</h1>
-        
-        <form action="https://formspree.io/mvowjolp" method="POST">
-            <label for="message">Why would you like to hire us?</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <label for="qualifications">Best reason we should help you achieve this objective:</label>
-            <textarea id="qualifications" name="qualifications" required></textarea>
-
-            <label for="email">Your Professional Email:</label>
-            <input type="email" id="email" name="_replyto" required>
-
-            <button type="submit">Apply To Be A Client</button>
-        </form>
-    </div>
-
-    <footer>
-        <a href="tos.html">Terms of Service</a>
-    </footer>
-
+        <section class="application-area">
+            <form action="https://formspree.io/mvowjolp" method="POST">
+                <div class="form-group">
+                    <label>Objective</label>
+                    <input type="text" name="objective" placeholder="Why would you like to hire us?" required>
+                </div>
+                <div class="form-group">
+                    <label>The Case</label>
+                    <textarea name="case" placeholder="Why should we prioritize your objective?" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Professional Contact</label>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <button type="submit">Submit for Review</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
