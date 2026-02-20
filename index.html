@@ -1,98 +1,180 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW & Associates | Strategic Advisory & Brand Experience Firm | Public Affairs | AI-Driven Narrative Modernization</title>
+    <meta name="description" content="Elite Consulting Group. Entry by referral or agency vetting only.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f1113;
+            --card-bg: #1a1d21;
+            --accent: #ffffff;
+            --text-main: #e0e0e0;
+            --text-dim: #9ca3af;
+            --border: #2d3139;
+        }
 
-	<!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>SW & Associates</title>
-   <meta name="description" content="Elite Consulting Group. Potential new clients must be referred by existing clients or vetted by agency.">  
-   
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
-   <!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" type="text/css" href="stylesheets/base.css">
-   <link rel="stylesheet" type="text/css" href="stylesheets/vendor.css">
-   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">    
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
 
-   <!-- Modernizr
-   =================================================== -->
-   <script src="js/modernizr.js"></script>
+        .logo {
+            max-width: 180px;
+            height: auto;
+            filter: brightness(0) invert(1); /* Ensures logo is visible on dark bg */
+            margin-bottom: 10px;
+        }
 
-   <!-- Favicons
-   =================================================== -->
-   <link rel="shortcut icon" href="favicon.png" >
-    
+        .media-link {
+            display: block;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .media-link:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 40px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-dim);
+        }
+
+        textarea, input {
+            width: 100%;
+            background: #25292e;
+            border: 1px solid var(--border);
+            color: #fff;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        textarea:focus, input:focus {
+            outline: none;
+            border-color: var(--text-dim);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--accent);
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        footer a:hover {
+            border-bottom: 1px solid var(--text-dim);
+        }
+    </style>
 </head>
-    
 <body>
 
- 
+    <header>
+        <a href="index.html">
+            <img src="swlogo.png" alt="SW & Associates" class="logo">
+        </a>
+        <a href="media.html" class="media-link">Members of the Media: Connect Here</a>
+    </header>
 
-   <!-- content-wrap -->
-   <div id="content-wrap">
+    <div class="container">
+        <h1>Client Application</h1>
+        
+        <form action="https://formspree.io/mvowjolp" method="POST">
+            <label for="message">Why would you like to hire us?</label>
+            <textarea id="message" name="message" required></textarea>
 
-      <!-- main  -->
-      <main class="row">
+            <label for="qualifications">Best reason we should help you achieve this objective:</label>
+            <textarea id="qualifications" name="qualifications" required></textarea>
 
-            <header class="site-header">
-               <div class="logo">
-               	<a href="index.html"><img src="swlogo.png"></a>
-               </div> 
-            </header>
+            <label for="email">Your Professional Email:</label>
+            <input type="email" id="email" name="_replyto" required>
 
-            <div id="main-content" class="twelve columns"><center><font color=#ffffff">
-		    Members of the Media <a href="media.html">Connect HERE Instead</a><P>
-		    
-		    
-		    
-		    
-<form
-  action="https://formspree.io/mvowjolp"
-  method="POST"
->
-	<label><font color=#ffffff">
-    Why would you like to hire us?:
-    <textarea name="message"></textarea>
-  </label>
-	<label><font color=#ffffff">
-    Please provide your best reason as to why we should help you achieve this objective:
-    <textarea name="qualifications"></textarea>
-  </label>
-  <label><font color=#ffffff">
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  
-</font></font></font>
-  <!-- your other form fields go here -->
+            <button type="submit">Apply To Be A Client</button>
+        </form>
+    </div>
 
-  <button type="submit"><font color=#000000>Apply To Be A Client</button>
-</form>
-  <center>            
+    <footer>
+        <a href="tos.html">Terms of Service</a>
+    </footer>
 
-            </div><!-- /main-content form -->
-
-            
-   
-<!-- Script
-=================================================== -->
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
- 
-<script src="js/jquery.fittext.js"></script>
-
-<script src="js/jquery.placeholder.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/main.js"></script>    
-		<P>.<P>.<P>    <font size ="-2" color=#ffffff><a href="tos.html">Terms of Service</a></font>        
 </body>
 </html>
